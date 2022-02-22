@@ -2,14 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore"
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAKZbLhP-esB9__S8Lk9DqwpgAsn4e0l-k",
-  authDomain: "mindup-18b5d.firebaseapp.com",
-  projectId: "mindup-18b5d",
-  storageBucket: "mindup-18b5d.appspot.com",
-  messagingSenderId: "590360098300",
-  appId: "1:590360098300:web:195e795bfb92d231ec6e79",
-  measurementId: "G-S2PN45GXXQ"
+  apiKey: "AIzaSyBrisaajBvxJx79f8KGsEWN_je-PgV6-iU",
+  authDomain: "cairus-ff66d.firebaseapp.com",
+  projectId: "cairus-ff66d",
+  storageBucket: "cairus-ff66d.appspot.com",
+  messagingSenderId: "792154832403",
+  appId: "1:792154832403:web:76944fc7484f7cf99c09e6",
+  measurementId: "G-XGG1WEFMGN"
 };
 
 // Initialize Firebase

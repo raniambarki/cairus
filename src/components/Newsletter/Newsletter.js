@@ -1,5 +1,6 @@
+import React, { useState } from 'react';
 import {db} from "../../firebase"
-import {collection,addDoc} from "../../firebase"
+import { collection, addDoc } from "firebase/firestore"; 
 
 export default function Newsletter() {
 
@@ -7,8 +8,13 @@ export default function Newsletter() {
   const [newMail, setNewMail] = useState("")
   const mailRef = collection(db,"cairus")
 
-  const createMail = async () => {
-    await addDoc()
+    const MailAdd = async(e) => {
+      e.preventDefault();
+
+  
+    await addDoc(mailRef,{name:newName,mail:newMail}
+    )
+    console.log("cc")
   }
 
   return (
@@ -49,7 +55,7 @@ export default function Newsletter() {
                   <h3 className="mb-4 text-xl font-bold sm:text-center sm:mb-6 sm:text-2xl">
                   Newsletter
                   </h3>
-                  <form className="MailAdd">
+                  <form onSubmit={MailAdd}>
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="name"
@@ -90,7 +96,7 @@ export default function Newsletter() {
                     </div>
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
-                        onClick={createMail}
+                        type='submit'
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
                       >
                         S'inscrire
