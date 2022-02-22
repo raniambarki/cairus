@@ -19,15 +19,12 @@ export default function Navbar() {
           title="Company"
           class="inline-flex items-center"
         >
-          <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          <span class="ml-2 text-xl font-bold tracking-wide text-indigo-700 uppercase">
             Cairus
           </span>
         </a>
 
-
-
         <ul class="flex items-center hidden space-x-8 lg:flex">
-
           {navigation.map((item) => (
             <li>
               <a
@@ -40,17 +37,16 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-
         </ul>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a
               href="/"
-              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-900 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
               aria-label="Sign up"
               title="Sign up"
             >
-              Sign up
+              Réservé{" "}
             </a>
           </li>
         </ul>
@@ -87,7 +83,7 @@ export default function Navbar() {
                       title="Company"
                       class="inline-flex items-center"
                     >
-                      <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                      <span class="ml-2 text-xl font-bold tracking-wide text-indigo-700 uppercase">
                         Cairus
                       </span>
                     </a>
@@ -125,11 +121,11 @@ export default function Navbar() {
                     <li>
                       <a
                         href="/"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-900 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
                         aria-label="Sign up"
                         title="Sign up"
                       >
-                        Sign up
+                        Réservé
                       </a>
                     </li>
                   </ul>

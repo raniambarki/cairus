@@ -35,8 +35,10 @@ export default function Features() {
                                 height="24"
                             />
                         </svg>
+                        <span className="relative">Nous offrons</span>
+
                     </span>{' '}
-                    Nous offrons une panoplie de services          </h2>
+                    une panoplie de services          </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                     accusantium doloremque rem aperiam, eaque ipsa quae.
