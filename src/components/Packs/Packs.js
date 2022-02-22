@@ -56,7 +56,7 @@ export default function Packs() {
                             href="/"
                             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
                         >
-                            Réservé            </a>
+                            Réserver            </a>
                         <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                             Sed ut unde omnis iste natus accusantium doloremque.
                         </p>
@@ -86,7 +86,7 @@ export default function Packs() {
                             href="/"
                             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
                         >
-                            Réservé            </a>
+                            Réserver            </a>
                         <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                             Sed ut unde omnis iste natus accusantium doloremque.
                         </p>
@@ -111,7 +111,7 @@ export default function Packs() {
                             href="/"
                             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
                         >
-                            Réservé            </a>
+                        Réserver            </a>
                         <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                             Sed ut unde omnis iste natus accusantium doloremque.
                         </p>

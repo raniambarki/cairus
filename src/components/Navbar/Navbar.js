@@ -46,7 +46,7 @@ export default function Navbar() {
               aria-label="Sign up"
               title="Sign up"
             >
-              Réservé{" "}
+              réserver{" "}
             </a>
           </li>
         </ul>
