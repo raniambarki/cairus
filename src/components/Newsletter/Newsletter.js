@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {db} from "../../firebase"
 import { collection, addDoc } from "firebase/firestore"; 
 
+
 export default function Newsletter() {
 
   const [newName, setNewName] = useState("")
@@ -14,8 +15,7 @@ export default function Newsletter() {
   
     await addDoc(mailRef,{name:newName,mail:newMail}
     )
-    console.log("cc")
-  }
+}
 
   return (
       <div className="overflow-hidden bg-gray-900">
@@ -67,7 +67,7 @@ export default function Newsletter() {
                         placeholder="Foulen ben foulen"
                         required
                         type="text"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-indigo-700"
                         id="name"
                         name="name"
                         onChange={(event) =>{
@@ -86,7 +86,7 @@ export default function Newsletter() {
                         placeholder="Foulen@example.tn"
                         required
                         type="email"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-indigo-700"
                         id="mail"
                         name="mail"
                         onChange={(event) =>{
@@ -97,7 +97,7 @@ export default function Newsletter() {
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
                         type='submit'
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
+                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900"
                       >
                         S'inscrire
                       </button>
