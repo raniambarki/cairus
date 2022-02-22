@@ -8,16 +8,17 @@ import Newsletter from '../components/Newsletter/Newsletter.js'
 import Footer from '../components/Footer/Footer.js'
 
 export default function LandingPage() {
-    return (
+  return (
     <div>
-    <Navbar />
-     <Hero />
-     <Features />
-     <Steps />
-     <Packs />
-     <About />
-     <Newsletter />
-     <Footer />
-     </div>
-    );
-  }
+      <Navbar />
+      <Hero />
+      <Features />
+      <Steps />
+      <Packs />
+      <About />
+      <Newsletter />
+      <Footer />
+
+    </div>
+  );
+}
