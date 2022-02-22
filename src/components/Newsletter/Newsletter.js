@@ -1,19 +1,8 @@
+import { documentId } from 'firebase/firestore';
 import db from '../../firebase.js'
 
 export default function Newsletter() {
 
-  const SaveMail = (event) => {
-    event.preventDefault();
-    const elementsArray=[...event.target.elements];
-    const formData = elementsArray.reduce((accumulator,currentValue) => {
-      if ( currentValue.id) {
-        accumulator[currentValue.id] = currentValue.value;
-      }
-      return accumulator;
-    },{});
-
-    db.collection("SurveyResponses").add("hello")
-  }  
 
   return (
       <div className="overflow-hidden bg-gray-900">
@@ -53,7 +42,7 @@ export default function Newsletter() {
                   <h3 className="mb-4 text-xl font-bold sm:text-center sm:mb-6 sm:text-2xl">
                   Newsletter
                   </h3>
-                  <form onSubmit={SaveMail}>
+                  <form className="MailAdd">
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="name"
