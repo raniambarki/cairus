@@ -16,7 +16,7 @@ export default function Hero() {
                                 </p>
                             </div>
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                                La création d'une
+                                La création d'une {' '}
                                 <br className="hidden md:block" />
                                 entreprise n'a jamais été {' '}
                                 <span className="inline-block text-teal-accent-400">
