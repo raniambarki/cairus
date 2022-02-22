@@ -1,5 +1,13 @@
 export default function Newsletter() {
-    return (
+
+  const SaveMail = (event) => {
+    event.preventDefault();
+    const elementsArray=[...event.target.elements];
+    console.log(elementsArray)
+
+  }  
+
+  return (
       <div className="overflow-hidden bg-gray-900">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
@@ -37,7 +45,7 @@ export default function Newsletter() {
                   <h3 className="mb-4 text-xl font-bold sm:text-center sm:mb-6 sm:text-2xl">
                   Newsletter
                   </h3>
-                  <form>
+                  <form onSubmit={SaveMail}>
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="name"
@@ -56,7 +64,7 @@ export default function Newsletter() {
                     </div>
                     <div className="mb-1 sm:mb-2">
                       <label
-                        htmlFor="email"
+                        htmlFor="mail"
                         className="inline-block mb-1 font-medium"
                       >
                         E-mail
@@ -64,10 +72,10 @@ export default function Newsletter() {
                       <input
                         placeholder="Foulen@example.tn"
                         required
-                        type="text"
+                        type="email"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                        id="email"
-                        name="email"
+                        id="mail"
+                        name="mail"
                       />
                     </div>
                     <div className="mt-4 mb-2 sm:mb-4">
