@@ -52,7 +52,6 @@ export default function Hero() {
                             src={girl}
                             alt=""
                         />
-
                     </div>
                 </div>
             </div>
