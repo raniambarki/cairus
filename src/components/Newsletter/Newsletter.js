@@ -1,4 +1,15 @@
+import {db} from "../../firebase"
+import {collection,addDoc} from "../../firebase"
+
 export default function Newsletter() {
+
+  const [newName, setNewName] = useState("")
+  const [newMail, setNewMail] = useState("")
+  const mailRef = collection(db,"cairus")
+
+  const createMail = async () => {
+    await addDoc()
+  }
 
   return (
       <div className="overflow-hidden bg-gray-900">
@@ -53,6 +64,9 @@ export default function Newsletter() {
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                         id="name"
                         name="name"
+                        onChange={(event) =>{
+                          setNewName(event.target.value)
+                        }}
                       />
                     </div>
                     <div className="mb-1 sm:mb-2">
@@ -69,11 +83,14 @@ export default function Newsletter() {
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                         id="mail"
                         name="mail"
+                        onChange={(event) =>{
+                          setNewMail(event.target.value)
+                        }}
                       />
                     </div>
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
-                        type="submit"
+                        onClick={createMail}
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-indigo-900 focus:shadow-outline focus:outline-none"
                       >
                         S'inscrire
