@@ -1,10 +1,18 @@
+import db from '../../firebase.js'
+
 export default function Newsletter() {
 
   const SaveMail = (event) => {
     event.preventDefault();
     const elementsArray=[...event.target.elements];
-    console.log(elementsArray)
+    const formData = elementsArray.reduce((accumulator,currentValue) => {
+      if ( currentValue.id) {
+        accumulator[currentValue.id] = currentValue.value;
+      }
+      return accumulator;
+    },{});
 
+    db.collection("SurveyResponses").add("hello")
   }  
 
   return (
