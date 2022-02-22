@@ -58,7 +58,7 @@ export default function Features() {
                         <a
                             href={item.href}
                             aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                            className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-700 hover:text-deep-purple-800"
                         >
                             Learn more
                         </a>

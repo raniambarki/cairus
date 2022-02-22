@@ -15,19 +15,19 @@ export default function Hero() {
                                     Coming soon!
                                 </p>
                             </div>
-                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-indigo-50 sm:text-4xl sm:leading-none">
-              La création d'une
-            <br className="hidden md:block" />
-            entreprise n'a jamais été {' '}
-                <span className="inline-block text-teal-accent-400">
-                aussi facile!
-                </span>
-              </h2>
-              <p className="text-base text-indigo-50 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
-              </p>
+                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+                                La création d'une
+                                <br className="hidden md:block" />
+                                entreprise n'a jamais été {' '}
+                                <span className="inline-block text-teal-accent-400">
+                                    aussi facile!
+                                </span>
+                            </h2>
+                            <p className="text-base text-indigo-50 md:text-lg">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                quae. explicabo.
+                            </p>
                         </div>
                         <div className="flex flex-col items-center md:flex-row">
                             <a
@@ -42,7 +42,7 @@ export default function Hero() {
                                 aria-label=""
                                 className="inline-flex items-center font-semibold text-white transition-colors duration-200 hover:text-indigo-100"
                             >
-Être rappelé                            </a>
+                                Être rappelé                            </a>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@ export default function Hero() {
                             src={girl}
                             alt=""
                         />
-                        
+
                     </div>
                 </div>
             </div>
