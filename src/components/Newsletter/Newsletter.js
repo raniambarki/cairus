@@ -1,8 +1,4 @@
-import { documentId } from 'firebase/firestore';
-import db from '../../firebase.js'
-
 export default function Newsletter() {
-
 
   return (
       <div className="overflow-hidden bg-gray-900">
