@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../../images/logoB.png";
 
 const navigation = [
   { name: "Accueil", href: "#" },
