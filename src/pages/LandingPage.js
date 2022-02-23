@@ -18,7 +18,6 @@ export default function LandingPage() {
       <About />
       <Newsletter />
       <Footer />
-
     </div>
   );
 }

@@ -44,6 +44,8 @@ export default function Features() {
                     accusantium doloremque rem aperiam, eaque ipsa quae.
                 </p>
             </div>
+
+            
             <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
                 {Feature.map((item) => (
